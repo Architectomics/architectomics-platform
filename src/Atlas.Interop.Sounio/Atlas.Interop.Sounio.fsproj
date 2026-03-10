@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Architectomics.Atlas.Interop.Sounio</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Contracts.fs" />
+    <Compile Include="Interop.fs" />
+    <Compile Include="Runner.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Domain\Atlas.Domain.fsproj" />
+  </ItemGroup>
+</Project>

@@ -1,8 +1,7 @@
 # tests
 
-This directory will hold:
+The first scaffold includes one SDK-style F# test project:
 
-- unit tests
-- integration tests
-- FsCheck property tests
-- release-path regression fixtures
+- `Atlas.Platform.Tests` unit tests for domain contracts and pipeline planning
+
+This is intentionally small. Integration, property, and fixture-based regression suites can split out once the runtime pipeline exists.

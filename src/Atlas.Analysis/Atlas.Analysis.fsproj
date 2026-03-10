@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Architectomics.Atlas.Analysis</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Analysis.fs" />
+    <Compile Include="Evidence.fs" />
+    <Compile Include="Summaries.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Domain\Atlas.Domain.fsproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Architectomics.Atlas.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Topology.fs" />
+    <Compile Include="Genome.fs" />
+    <Compile Include="Windows.fs" />
+  </ItemGroup>
+</Project>

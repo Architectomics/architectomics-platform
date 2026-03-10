@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Architectomics.Atlas.Pipeline</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Pipeline.fs" />
+    <Compile Include="Manifests.fs" />
+    <Compile Include="PipelinePlan.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Domain\Atlas.Domain.fsproj" />
+  </ItemGroup>
+</Project>

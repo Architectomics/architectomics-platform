@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DomainTests.fs" />
+    <Compile Include="PipelineTests.fs" />
+    <Compile Include="SmokeTests.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsCheck.Xunit" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Atlas.Domain\Atlas.Domain.fsproj" />
+    <ProjectReference Include="..\..\src\Atlas.Pipeline\Atlas.Pipeline.fsproj" />
+    <ProjectReference Include="..\..\src\Atlas.Interop.Sounio\Atlas.Interop.Sounio.fsproj" />
+    <ProjectReference Include="..\..\src\Atlas.Analysis\Atlas.Analysis.fsproj" />
+  </ItemGroup>
+</Project>

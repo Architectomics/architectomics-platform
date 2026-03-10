@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Architectomics.Atlas.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="CommandLine.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Domain\Atlas.Domain.fsproj" />
+    <ProjectReference Include="..\Atlas.Pipeline\Atlas.Pipeline.fsproj" />
+    <ProjectReference Include="..\Atlas.Interop.Sounio\Atlas.Interop.Sounio.fsproj" />
+    <ProjectReference Include="..\Atlas.Analysis\Atlas.Analysis.fsproj" />
+  </ItemGroup>
+</Project>
