@@ -11,17 +11,17 @@ type ArchitectureSummary =
 [<RequireQualifiedAccess>]
 module Summary =
     let fromSelections (selections: ContractSelection list) =
-        let isValid selection =
+        let isValid (selection: ContractSelection) =
             Contracts.operatorSpaceIsAllowed selection.Topology selection.OperatorSpace
 
         { TotalSelections = selections.Length
           CircularSelections =
             selections
-            |> List.filter (fun selection -> selection.Topology = GenomeTopology.Circular)
+            |> List.filter (fun (selection: ContractSelection) -> selection.Topology = GenomeTopology.Circular)
             |> List.length
           LinearSelections =
             selections
-            |> List.filter (fun selection -> selection.Topology = GenomeTopology.Linear)
+            |> List.filter (fun (selection: ContractSelection) -> selection.Topology = GenomeTopology.Linear)
             |> List.length
           ValidSelections =
             selections

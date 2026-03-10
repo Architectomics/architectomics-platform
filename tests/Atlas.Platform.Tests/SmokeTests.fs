@@ -8,11 +8,11 @@ open Architectomics.Atlas.Analysis
 module SmokeTests =
     [<Fact>]
     let ``circular topology accepts circular DNA operator space`` () =
-        Assert.True(Contracts.operatorSpaceIsAllowed GenomeTopology.Circular OperatorSpace.CircularDna)
+        Assert.Equal(true, Contracts.operatorSpaceIsAllowed GenomeTopology.Circular OperatorSpace.CircularDna)
 
     [<Fact>]
     let ``linear topology rejects circular DNA operator space`` () =
-        Assert.False(Contracts.operatorSpaceIsAllowed GenomeTopology.Linear OperatorSpace.CircularDna)
+        Assert.Equal(false, Contracts.operatorSpaceIsAllowed GenomeTopology.Linear OperatorSpace.CircularDna)
 
     [<Property>]
     let ``architecture aware operator space remains valid for both topologies`` (isCircular: bool) =

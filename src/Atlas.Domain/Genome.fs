@@ -1,6 +1,6 @@
 namespace Architectomics.Atlas.Domain
 
-module GenomeUnitRecord =
+module GenomeUnitRecords =
     let empty unitId =
         { UnitId = unitId
           Domain = GenomeDomain.Bacteria

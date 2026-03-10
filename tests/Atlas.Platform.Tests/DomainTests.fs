@@ -6,7 +6,7 @@ open Xunit
 type DomainTests() =
     [<Fact>]
     member _.``GenomeUnitRecord empty seeds a circular placeholder``() =
-        let unitRecord = GenomeUnitRecord.empty "unit-001"
+        let unitRecord = GenomeUnitRecords.empty "unit-001"
 
         Assert.Equal("unit-001", unitRecord.UnitId)
         Assert.Equal("unknown", unitRecord.MoleculeClass)

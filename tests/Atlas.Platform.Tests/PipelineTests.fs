@@ -13,6 +13,6 @@ type PipelineTests() =
               PipelineStage.MaterializeCatalog
               PipelineStage.ExportRelease ]
 
-        Assert.True(expectedStages = plan.Stages)
-        Assert.True(plan.MaxUnits = Some 100)
-        Assert.True(plan.Seed = Some 42)
+        Assert.Equal<PipelineStage list>(expectedStages, plan.Stages)
+        Assert.Equal(Some 100, plan.MaxUnits)
+        Assert.Equal(Some 42, plan.Seed)

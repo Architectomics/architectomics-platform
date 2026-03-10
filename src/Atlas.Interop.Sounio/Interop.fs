@@ -18,8 +18,8 @@ module SounioInterop =
           WorkingDirectory = repoRoot
           Arguments = [ "check"; "sounio/src/topology_contracts.sio" ] }
 
-    let selectionIsValid selection =
+    let selectionIsValid (selection: ContractSelection) =
         Contracts.operatorSpaceIsAllowed selection.Topology selection.OperatorSpace
 
-    let interventionIsValid intervention =
+    let interventionIsValid (intervention: InterventionSpec) =
         Contracts.interventionIsAllowed intervention.Topology intervention.Kind
